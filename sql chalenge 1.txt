@@ -1,0 +1,36 @@
+CREATE TABLE books ( id INTEGER PRIMARY KEY, name TEXT, author TEXT, quantity INTEGER, price INTEGER );
+
+INSERT INTO books VALUES (1, "Don Quixote", "Miguel de Cervantess", 
+10, 30);
+
+INSERT INTO books VALUES (2, "Master and Margaret", "Mikhail Bulgakov", 10, 25);
+
+INSERT INTO books VALUES (3, "Me bebia Iliko da Ilarioni", "Nodar Dumbadze", 10, 20);
+
+INSERT INTO books VALUES (4, "Red and Black", "Leonid Pasternak", 10, 20);
+
+INSERT INTO books VALUES (5, "War and Piece", "Lev Tolstoy", 10, 20);
+
+INSERT INTO books VALUES (6, "Ana Karenina", "Lev Tolstoy", 10, 20);
+
+INSERT INTO books VALUES (7, "King Leir", "William Shakespeare", 10, 20);
+
+INSERT INTO books VALUES (8, "Hamlet", "William Shakespeare", 10, 20);
+
+INSERT INTO books VALUES (9, "Idiot", "Fyodor dostoyevskyi", 10, 20);
+
+INSERT INTO books VALUES (10, "U Tixona", "Fyodor dostoyevskyi", 10, 20);
+
+INSERT INTO books VALUES (11, "Player", "Fyodor dostoyevskyi", 10, 20);
+
+INSERT INTO books VALUES (12, "The Knight in the Panther's", "Shota Rustaveli", 10, 20);
+
+INSERT INTO books VALUES (13, "Merani", "Nikoloz Baratashvili", 10, 10);
+
+INSERT INTO books VALUES (14, "The Skin of Shagreen", " Honoré de Balzac", 10, 20);
+
+INSERT INTO books VALUES (15, "Bhagavad Gita", "Traditionally attributed to Vyasa", 10, 50);
+
+SELECT * FROM books WHERE price < 25 ORDER BY price;
+
+SELECT quantity,  SUM(price) FROM books ORDER BY quantity;
